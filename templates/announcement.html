@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ announcement.title }}{% endblock %}
+
+{% block content %}
+    <div class="w3-container" style="margin-top: 80px" id="heading">
+        <div class="row">
+            <p>{{ announcement.date }}</p>
+        </div>
+        <div class="row">
+            <p style="font-size: 36px"><b>{{ announcement.title }}</b></p>
+        </div>
+        <div class="row">
+            <p style="font-size: 24px">{{ announcement.message }}</p>
+        </div>
+        <div class="row">
+            <p><i>{{ announcement.sender }}</i></p>
+        </div>
+    </div>
+{% endblock %}
